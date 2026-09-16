@@ -1,0 +1,15 @@
+{
+  "name": "swreqspec",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ],
+      "settings": {
+        "chat.promptFiles": true
+      }
+    }
+  }
+}
