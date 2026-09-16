@@ -22,11 +22,13 @@
 เปิด terminal ที่ root ของ repo แล้วรัน
 
 ```bash
-curl -sL https://plearnjai.com/req-it69/agent-pack.tar.gz | tar xz
+curl -sL https://github.com/ppsajja/swreqspec-template/archive/refs/heads/main.tar.gz | tar xz --strip-components=1 --exclude='*/specs' --exclude='*/specs/*' --exclude='*/README.md' --exclude='*/.gitignore'
 git add -A
 git commit -m "add agent-pack"
 git push
 ```
+
+(repo ที่สร้างจาก template ของรายวิชามีชุดนี้อยู่แล้ว ไม่ต้องรัน)
 
 เสร็จแล้วเพื่อนในทีมแค่ `git pull` หรือเปิด Codespace ใหม่ ก็ได้คำสั่งเหมือนกัน
 
