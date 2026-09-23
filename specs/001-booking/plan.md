@@ -21,6 +21,7 @@
 
 library ทั้งหมดอยู่ใน `backend/requirements.txt` (Codespace ติดตั้งให้ตอนสร้างเครื่อง)
 รัน test หลังบ้านด้วยคำสั่ง `cd backend && pytest` (ตั้งค่าไว้แล้วใน `backend/pytest.ini`)
+เปิดหลังบ้านให้หน้าจอเรียกได้ด้วยคำสั่ง `cd backend && uvicorn app.main:app --reload --port 8000` (หน้าจอเรียกผ่าน `/api` ซึ่ง Vite ส่งต่อไปให้)
 รัน test หน้าจอด้วยคำสั่ง `cd frontend && npm test` และเปิดดูหน้าจอด้วย `cd frontend && npm run dev` (Codespace ติดตั้ง library ของหน้าจอให้ตอนสร้างเครื่อง)
 
 ### โครงไฟล์
@@ -59,7 +60,7 @@ frontend/                      React (Vite) + Tailwind CSS มีโครงเ
   src/
     App.jsx                    หน้าแรก ใส่หน้าจอของแต่ละ task เข้ามาที่นี่
     index.css                  เปิดใช้ Tailwind
-    api/client.js              เรียก API หลังบ้าน ตอน test ส่ง client จำลองเข้าหน้าจอแทน
+    api/client.js              เรียก API หลังบ้านผ่าน /api (Vite ส่งต่อไป port 8000) ตอน test ส่ง client จำลองเข้าหน้าจอแทน
     pages/SlotPicker.jsx       หน้าเลือกแพ็กเกจและช่วงเวลา
     pages/ConfirmBooking.jsx   หน้ายืนยัน และแจ้ง "ช่วงเวลาเต็ม" พร้อม 3 ตัวเลือก
     pages/BookingResult.jsx    หน้าแสดงผลการจองและหมายเลขคิว

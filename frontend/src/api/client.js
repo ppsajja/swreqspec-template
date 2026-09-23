@@ -1,6 +1,7 @@
 // จุดเดียวที่หน้าจอใช้เรียก API หลังบ้าน (ตามสัญญา API ใน plan.md ข้อ 4)
 // ตอน test ให้ส่ง client จำลองเข้าไปในหน้าจอแทน ไม่ต้องรันหลังบ้านจริง
-const BASE = import.meta.env.VITE_API_BASE ?? 'http://localhost:8000'
+// เรียกผ่าน /api (ดู proxy ใน vite.config.js) หลังบ้านต้องรันอยู่ที่ port 8000
+const BASE = import.meta.env.VITE_API_BASE ?? '/api'
 
 export const api = {
   async getSlots({ dateFrom, packageCode }) {
