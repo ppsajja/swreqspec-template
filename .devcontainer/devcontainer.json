@@ -13,5 +13,14 @@
       }
     }
   },
-  "postCreateCommand": "pip install -r backend/requirements.txt"
+  "postCreateCommand": "pip install -r backend/requirements.txt && npm install --prefix frontend --no-audit --no-fund",
+  "forwardPorts": [
+    5173
+  ],
+  "portsAttributes": {
+    "5173": {
+      "label": "หน้าจอ (Vite)",
+      "onAutoForward": "notify"
+    }
+  }
 }

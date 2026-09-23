@@ -20,6 +20,7 @@ specs/README.md              ดัชนีว่าฟีเจอร์ไห
 specs/001-booking/           ตัวอย่างของรายวิชา: spec.md (v2) และ plan.md (ใช้ฝึกในคาบ)
 specs/00N-<feature>/spec.md  spec.md ของทีม 1 โฟลเดอร์ต่อ 1 ฟีเจอร์
 backend/requirements.txt     library ของ Python ที่ Codespace ติดตั้งให้ตอนสร้างเครื่อง
+frontend/                    โครงหน้าจอ React + Tailwind (npm run dev เปิดดู, npm test รัน test)
 prompt-log.md                AI สร้างให้เมื่อใช้คำสั่ง (บันทึกสิ่งที่สั่งและผลลัพธ์)
 .github/prompts/             คำสั่ง /clarify /plan /tasks /implement สำหรับ Copilot
 .claude/commands/            คำสั่งชุดเดียวกัน สำหรับ Claude Code
