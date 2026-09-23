@@ -5,11 +5,13 @@
     "vscode": {
       "extensions": [
         "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "GitHub.copilot-chat",
+        "ms-python.python"
       ],
       "settings": {
         "chat.promptFiles": true
       }
     }
-  }
+  },
+  "postCreateCommand": "pip install -r backend/requirements.txt"
 }
